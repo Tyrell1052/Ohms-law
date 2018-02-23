@@ -77,9 +77,6 @@ while(strloop == "Y"):
         dblx = calcres(dblx, dbly)
         outrest(dblx)
 
-
-
-
     elif(strask == "4"):
         strloop = "x"
     else:
