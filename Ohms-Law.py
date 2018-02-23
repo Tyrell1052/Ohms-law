@@ -1,27 +1,53 @@
 # Ohms law functions
-#input functions
+
+                                  #INPUT FUNCTIONS
+#current
 def incur():
     dbli = float(input("enter the current"))
     return dbli
+
+#volts
 def involt():
     dblv = float(input("enter the volts"))
     return dblv
-#inreistance function
-#process function
 
-# process functions
+#resistnce
+def inresist():
+    dblr = float(input("enter the resistance"))
+    return dblr
+
+
+                                 #PROCESS FUNCTIONS
+#resistance
 def calcres(dblc, dblvo):
     dblres = dblvo/dblc
     return dblres
-#calccurrent function
-#calcvoltage function
-#output function
-# output functions
+
+#current
+def calccur():
+    dblcur =
+    return dblcur
+
+#volts
+def calcvol():
+    dblvol =
+    return dblvol
+
+
+                                # OUTPUT FUNCTIONS
+# resistance
 def outrest(dblr):
     print("the resistance is", format(dblr,".2f"))
-#outvolts function
-#outcurrent function
-# main
+
+#volts
+def outvol(dblv):
+    print("the volts are", format(dblv,".2f"))
+
+#current
+def outcur(dblc):
+    print("the current is", format(dblc,".2f"))
+
+# main()
 strloop = "Y"
 while(strloop == "Y"):
     print("1. find volts 2. find current 3. find resistance 4. quit")
