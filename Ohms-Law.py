@@ -24,13 +24,13 @@ def calcres(dblc, dblvo):
     return dblres
 
 #current
-def calccur():
-    dblcur =
+def calccur(dblv, dblr):
+    dblcur = dblv/dblr
     return dblcur
 
 #volts
-def calcvol():
-    dblvol =
+def calcvol(dblr, dblc):
+    dblvol = dblr * dblc
     return dblvol
 
 
@@ -56,14 +56,30 @@ while(strloop == "Y"):
     dbly = 0
     if(strask == "1"):
         print("volts")
+        # calculate voltage
+        dblx = inresist()
+        dbly = incur()
+        dblx = calcvol(dblx, dbly)
+        outvol(dblx)
     elif(strask == "2"):
         print("current")
+        # calculate current
+        dblx = involt()
+        dbly = inresist()
+        dblx = calccur(dblx, dbly)
+        outcur(dblx)
+
     elif(strask == "3"):
         print("resistance")
+        #calculate resistance
         dblx = incur()
         dbly = involt()
         dblx = calcres(dblx, dbly)
         outrest(dblx)
+
+
+
+
     elif(strask == "4"):
         strloop = "x"
     else:
