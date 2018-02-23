@@ -1,4 +1,4 @@
-# Ohms law functions
+# Ohms Law Program                         Tyrell Robbins                      2/22/18
 
                                   #INPUT FUNCTIONS
 #current
